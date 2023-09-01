@@ -1,2 +1,3 @@
-# StreamDeck-Tempo
-EDF Tempo plugin for Streamdeck
+# streamDeck-edfTEMPOPlugin
+Plugin for StreamDeck to display EDF TEMPO info
+

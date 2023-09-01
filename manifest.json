@@ -1,0 +1,40 @@
+{
+  "Actions": [
+    {
+      "Icon": "resources/actionIcon",
+      "Name": "Tempo EDF",
+      "States": [
+        {
+          "Image": "resources/actionDefaultImage",
+          "TitleAlignment": "bottom",
+          "FontSize": "10"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Récupérer les infos sur les jours Tempo EDF",
+      "UUID": "com.pelleteuse.TempoEDF.sdPlugin"
+    }
+  ],
+  "SDKVersion": 2,
+  "Author": "Alexis Cardon",
+  "CodePath": "plugin/main.html",
+  "Description": "Récupérer les infos sur les jours Tempo EDF.",
+  "Name": "Tempo EDF",
+  "Icon": "resources/pluginIcon",
+  "PropertyInspectorPath": "pi/main_pi.html",
+  "URL": "https://localhost",
+  "Version": "1.0.0",
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "4.1"
+  }
+}

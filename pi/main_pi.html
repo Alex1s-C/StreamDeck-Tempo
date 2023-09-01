@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>com.pelleteuse.TempoEDF.pi</title>
+    <link rel="stylesheet" href="sdpi.css" />
+    <script src="main_pi.js"></script>
+</head>
+
+<body onload="updateSettings();updateGlobal();">
+<div class="sdpi-wrapper hidden">
+    <div class="sdpi-item">
+        <details class="message info">
+            <summary>
+                Please do not set a title or an image for this plugin as they are
+                being generated on the fly!
+            </summary>
+        </details>
+    </div>
+
+    <div class="sdpi-heading">API SETUP</div>
+
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">API Key</div>
+        <input
+                class="sdpi-item-value"
+                id="apiKey"
+                value=""
+                onchange="updateGlobal()"
+                placeholder="Clef d'API RTE"
+                required
+        />
+    </div>
+
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">Fetch frequency</div>
+        <select
+                class="sdpi-item-value select"
+                id="frequency"
+                onchange="updateSettings()"
+        >
+            <option value="0">A la demande</option>
+            <option value="3600000">1 heure</option>
+            <option value="7200000">2 heures</option>
+            <option value="10800000">3 heures</option>
+        </select>
+    </div>
+
+
+    <div class="sdpi-item">
+        <button class="sdpi-item-value" onclick="openPage('data.rte-france.com/group/guest/apps')">
+            Récuperer la clef API (en base 64)
+        </button>
+    </div>
+</div>
+</body>
+</html>
